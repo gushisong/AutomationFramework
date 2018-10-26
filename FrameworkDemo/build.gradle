@@ -25,5 +25,21 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+	
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+	
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+	
+	// https://mvnrepository.com/artifact/org.databene/feed4junit
+	compile group: 'org.databene', name: 'feed4junit', version: '1.2.0'
+	
+	
+	
+    
 }
 
