@@ -1,0 +1,1 @@
+java -cp .:C:/Users/xiaolson/.m2/repository/junit/junit/4.11/junit-4.11.jar:C:/Users/xiaolson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar org.junit.runner.JUnitCore com.oracle.pt.bass2.qe.testcase.AllTest

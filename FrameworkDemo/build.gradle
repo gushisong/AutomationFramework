@@ -56,3 +56,20 @@ dependencies {
     
 }
 
+tasks.withType(Test) { 
+  testLogging {
+    exceptionFormat "full"
+    events "started", "skipped", "passed", "failed"
+    showStandardStreams true
+  }
+}
+
+
+task {
+
+	useJunit{
+		includeCategories 'com.oracle.pt.bass2.qe.testcase.Login'
+	}
+
+}
+
