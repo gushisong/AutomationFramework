@@ -16,21 +16,21 @@ public class LoginPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	//ÓÃ»§ÃûÊäÈë¿ò
+	//è¾“å…¥ç”¨æˆ·å
 	@FindBy(id="username")
 	WebElement txt_username;
 	
-	//ÃÜÂëÊäÈë¿ò
+	//å¯†ç è¾“å…¥æ¡†
 	@FindBy(id="password")
 	WebElement txt_password;
 	
-	//µÇÂ½°´Å¥
+	//ç™»é™†æŒ‰é’®
 	@FindBy(className="login_btn")
 	WebElement btn_login;
 	
 	
-	//»¶Ó­½çÃæ
-	@FindBy(partialLinkText="ÄúºÃ")
+	
+	@FindBy(partialLinkText="ï¿½ï¿½ï¿½ï¿½")
 	WebElement lab_hello;
 	
 	public void login(String username,String password) {

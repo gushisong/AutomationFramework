@@ -13,7 +13,7 @@ public class BasePage {
 	protected Log log;
 	
 	/**
-	 *	³õÊ¼»¯½çÃæÔªËØ
+	 *	
 	 * @param driver
 	 */
 	public BasePage(WebDriver driver) {
@@ -25,13 +25,13 @@ public class BasePage {
 	}
 	
 	public void sendKeys(WebElement element,String keys) {
-		log.info("ÏòÒ³ÃæÔªËØ : "+element.toString().split("->")[1].toString()+" ÊäÈë £º"+keys);
+		log.info("å‘é¡µé¢å…ƒç´  : "+element.toString().split("->")[1].toString()+" è¾“å…¥"+keys);
 		element.clear();
 		element.sendKeys(keys);
 		
 	}
 	public void click(WebElement element) {
-		log.info("µã»÷ÔªËØ  £º"+element.toString());
+		log.info("ç‚¹å‡»é¡µé¢å…ƒç´ "+element.toString());
 		try {
 			element.click();
 		} catch (Exception e) {

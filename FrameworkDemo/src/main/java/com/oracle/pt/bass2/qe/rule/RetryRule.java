@@ -23,9 +23,9 @@ public class RetryRule implements TestRule {
 				Throwable retryThrowable=null;
 				Retry retry=description.getAnnotation(Retry.class);
 				if(retry!=null) {
-					System.out.println("ÕÒµ½ÁËRetry×¢½â");
+					System.out.println("Retry");
 					int times=retry.runtimes();
-					System.out.println("ÔËĞĞ´ÎÊı : "+times);
+					System.out.println("å°è¯•æ‰§è¡Œæ¬¡æ•° : "+times);
 					for(int i=0;i<times;i++) {
 						try {
 							base.evaluate();
@@ -33,15 +33,15 @@ public class RetryRule implements TestRule {
 						} catch (Throwable e) {
 							// TODO: handle exception
 							retryThrowable=e;
-							System.out.println("²âÊÔÓÃÀı£º"+description.getMethodName()+"ÕıÔÚÖØÊÔµÚ"+(i+1)+"´Î");
+							System.out.println("å°è¯•æ‰§è¡Œ"+description.getMethodName()+"ç¬¬"+(i+1)+"æ¬¡");
 							
 						}
 						
 					}
-					System.err.println("ÔÚ³¢ÊÔÁË"+times+"´Îºó£¬²âÊÔÓÃÀı£º"+description.getMethodName()+"×îÖÕÖ´ĞĞÊ§°ÜÁË");
+					System.err.println("ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½"+times+"ï¿½Îºó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+description.getMethodName()+"ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½Ê§ï¿½ï¿½ï¿½ï¿½");
 					throw retryThrowable;
 				}else {
-					System.out.println("Ã»ÕÒµ½retry±êÇ©");
+					System.out.println("Ã»ï¿½Òµï¿½retryï¿½ï¿½Ç©");
 					base.evaluate();
 				}
 				
