@@ -14,7 +14,7 @@ public class WebDriverManager {
 	public static WebDriver getWebDriver(String browserName) {
 		
 		if("Chrome".equals(browserName)) {
-			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "F:\\java_lib\\BrowserDrivers\\chromedriver.exe");
 			ChromeOptions chromeOptions=new ChromeOptions();
 			chromeOptions.addArguments("disable-inforbars");
 			driver=new ChromeDriver(chromeOptions);
