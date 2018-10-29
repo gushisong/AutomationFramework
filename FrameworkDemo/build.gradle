@@ -14,11 +14,12 @@ compileJava.options.encoding = 'UTF-8'
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    maven {
-        url 'http://maven.aliyun.com/nexus/content/groups/public/'
-    }
+    //maven {
+      //  url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    //}
     jcenter()
-    mavenCentral()
+    //mavenCentral()
+    mavenLocal()
     
 }
 
@@ -43,6 +44,10 @@ dependencies {
 	
 	// https://mvnrepository.com/artifact/org.databene/feed4junit
 	compile group: 'org.databene', name: 'feed4junit', version: '1.2.0'
+	
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+	compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+	
 	
 	
 	
