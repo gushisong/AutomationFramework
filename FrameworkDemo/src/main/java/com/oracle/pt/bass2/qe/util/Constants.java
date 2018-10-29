@@ -11,7 +11,7 @@ public class Constants {
 	
 	public static final String Password="IRL-local-1234";
 	
-	public static final String BrowserName="Firefox";
+	public static final String BrowserName="Chrome";
 
 
 }
