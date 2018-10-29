@@ -96,7 +96,8 @@
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src/main/java"/>
+        	<compilerarg line="-encoding UTF-8 "/>
+        	<src path="src/main/java"/>
             <src path="src/test/java"/>
             <src path="image"/>
             <classpath refid="FrameworkDemo.classpath"/>
